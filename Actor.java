@@ -7,7 +7,7 @@
  */
 public class Actor
 {
-    int x = 0;
+    int x = 2;
     public Actor()
     {
        
