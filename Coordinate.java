@@ -9,7 +9,7 @@ public class Coordinate
 {
     int x;
     int y;
-    Coordiante parent;
+    Coordinate parent;
     
     public Coordinate(int x, int y)
     {
