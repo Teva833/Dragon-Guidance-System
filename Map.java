@@ -16,18 +16,22 @@ public class Map
     public Map()
     {
         // initialise instance variables
-        x = 0;
+        map.add(0);
+        map.add(1);
+        map.add(2);
+        map.add(3);
+        map.add(4);
+        map.add(5);
+        map.add(6);
+        //add edges
+        map.addEdge(0,1);
+        map.addEdge(0,2);
+        map.addEdge(1,3);
+        map.addEdge(2,4);
+        map.addEdge(3,6);
+        map.addEdge(4,5);
+        map.addEdge(5,3);
     }
 
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
-    }
+    
 }
