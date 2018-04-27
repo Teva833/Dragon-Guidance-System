@@ -24,7 +24,7 @@ public class Solver
     public List<String> pathFind(String start, String end, AdjacencyListGraph<String> graph)
     {
         List<String> path = new ArrayList<>();
-        
+        path.add(start);
         return new List<String>();
     }
     
