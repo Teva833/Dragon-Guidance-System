@@ -8,7 +8,7 @@ import mayflower.*;
  */
 public class Maze
 {
-    Graph<Integer> map = new AdjacencyListGraph<Integer>();
+    Graph<String> map = new AdjacencyListGraph<String>();
     
     /**
      * Constructor for objects of class Map
@@ -16,28 +16,32 @@ public class Maze
     public Maze()
     {
         // initialise instance variables
-        map.add(0);
-        map.add(1);
-        map.add(2);
-        map.add(3);
-        map.add(4);
-        map.add(5);
-        map.add(6);
+        map.add("0");
+        map.add("1");
+        map.add("2");
+        map.add("3");
+        map.add("4");
+        map.add("5");
+        map.add("6");
         //add edges
-        map.addEdge(0,1);
-        map.addEdge(0,2);
-        map.addEdge(1,3);
-        map.addEdge(2,4);
-        map.addEdge(3,6);
-        map.addEdge(4,5);
-        map.addEdge(5,3);
-        map.addEdge(1,0);
-        map.addEdge(2,0);
-        map.addEdge(3,1);
-        map.addEdge(4,2);
-        map.addEdge(6,3);
-        map.addEdge(5,4);
-        map.addEdge(3,5);
+        map.addEdge("0","1");
+        map.addEdge("0","2");
+        map.addEdge("1","3");
+        map.addEdge("2","4");
+        map.addEdge("3","6");
+        map.addEdge("4","5");
+        map.addEdge("5","3");
+        map.addEdge("1","0");
+        map.addEdge("2","0");
+        map.addEdge("3","1");
+        map.addEdge("4","2");
+        map.addEdge("6","3");
+        map.addEdge("5","4");
+        map.addEdge("3","5");
+    }
+    public Graph<String> getMap()
+    {
+        return map;
     }
 
     
