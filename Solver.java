@@ -31,7 +31,7 @@ public class Solver
             return path;
 
         }
-        List<String> neighbors = start.getNeighbors();
+        List<String> neighbors = graph.getNeighbors(start);
         for(int i = 0; i < neighbors.length(); i++)
         {
             boolean passed = false;
