@@ -25,11 +25,7 @@ public class Solver
     {
         List<String> path = new ArrayList<>();
         path.add(start);
-<<<<<<< HEAD
-=======
-
         path.add(end);
->>>>>>> 928041a1f315d95926db0f31a5392b7e59606653
         return path;
     }
     
