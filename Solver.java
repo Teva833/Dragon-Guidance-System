@@ -10,7 +10,7 @@ import java.util.List;
 public class Solver
 {
     // instance variables - replace the example below with your own
-    private static final int[][] DIRECTIONS = {{0,1}, {1,0}, {0,-1}, {-1,0}};
+
 
     /**
      * Constructor for objects of class Solver
@@ -21,7 +21,12 @@ public class Solver
         
     }
     
-    public List<Coordinate> 
+    public List<String> pathFind(String start, String end, AdjacencyListGraph<String> graph)
+    {
+        List<String> path = new ArrayList<>();
+        
+        return new List<String>();
+    }
     
     
     
