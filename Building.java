@@ -14,5 +14,6 @@ public class Building extends Stage
     public Building()
     {
         setBackground("600Map.png");
+        addActor(new Node(), 50, 50);
     }
 }
