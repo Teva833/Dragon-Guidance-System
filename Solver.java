@@ -25,7 +25,9 @@ public class Solver
     {
         List<String> path = new ArrayList<>();
         path.add(start);
-        return new path;
+
+        path.add(end);
+        return path;
     }
     
     
