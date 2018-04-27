@@ -14,10 +14,7 @@ public class Building extends Stage
     public Building()
     {
         setBackground("600Map.png");
-        for(int i = 0; i < 16; i++)
-            for(int j = 0; j < 12; j++)
-                //addActor(new Node(), 50 * i, 50 * j);
-        //second floor nodes
+        //second floor
         addActor(new Node(), 204, 105); //2f stair top
         addActor(new Node(), 204, 150); // 621 622 624
         addActor(new Node(), 204, 208); //623 626
@@ -27,5 +24,7 @@ public class Building extends Stage
         addActor(new Node(), 204, 378); //629 631 632 634
         addActor(new Node(), 204, 448); //Rest rooms 633
         addActor(new Node(), 204, 490); //2f stair bot
+        //first floor
+        
     }
 }
