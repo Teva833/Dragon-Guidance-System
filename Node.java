@@ -10,5 +10,6 @@ public class Node extends Actor
    {
        Picture node = new Picture("node.png");
        node.resize(10,10);
+       setPicture(node);
    }
 }

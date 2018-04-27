@@ -140,6 +140,7 @@ target6.editor.x=545
 target6.editor.y=245
 target6.height=50
 target6.name=Node
+target6.naviview.expanded=true
 target6.showInterface=false
 target6.type=ClassTarget
 target6.typeParameters=
