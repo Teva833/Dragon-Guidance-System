@@ -32,10 +32,10 @@ public class Solver
 
         }
         List<String> neighbors = graph.getNeighbors(start);
-        for(int i = 0; i < neighbors.length(); i++)
+        for(int i = 0; i < neighbors.size(); i++)
         {
             boolean passed = false;
-            for(int j = 0; j < traversed.length(); j++)
+            for(int j = 0; j < traversed.size(); j++)
             {
                 if(neighbors.get(i).equals(traversed.get(j)))
                 {
@@ -51,9 +51,9 @@ public class Solver
             List<String> check = pathFind(start, end, graph);
             if(check != null)
             {
-                for(int i = 0; i < check.length(); i++)
+                for(int j = 0; j < check.size(); j++)
                 {
-                    path.add(check.get(i));
+                    path.add(check.get(j));
                 }
                 return path;
             }
