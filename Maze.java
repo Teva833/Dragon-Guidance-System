@@ -31,6 +31,13 @@ public class Maze
         map.addEdge(3,6);
         map.addEdge(4,5);
         map.addEdge(5,3);
+        map.addEdge(1,0);
+        map.addEdge(2,0);
+        map.addEdge(3,1);
+        map.addEdge(4,2);
+        map.addEdge(6,3);
+        map.addEdge(5,4);
+        map.addEdge(3,5);
     }
 
     
