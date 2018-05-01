@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.params=data
+comment0.target=TNode(java.lang.Object)
+comment1.params=node
+comment1.target=TNode\ setParent(TNode)
+comment1.text=\r\n\tSets\ this\ Node's\ parent\ node\r\n\t@return\ the\ original\ parent\ node\r\n
+comment2.params=
+comment2.target=TNode\ getParent()
+comment2.text=\r\n\t@return\ this\ node's\ parent\ node\r\n
+comment3.params=child
+comment3.target=boolean\ addChild(TNode)
+comment3.text=\r\n\tAdd\ child\ as\ a\ child\ of\ this\ node.\ Sets\ this\ node\ as\ the\ parent\ of\ child\r\n\t@return\ true\ if\ child\ is\ successfully\ added\r\n
+comment4.params=
+comment4.target=java.util.List\ getChildren()
+comment4.text=\r\n\t@return\ array\ that\ contains\ all\ children\ TNodes\r\n
+comment5.params=
+comment5.target=java.lang.Object\ getData()
+comment5.text=\r\n\t@return\ the\ data\ stored\ in\ this\ node\r\n
+comment6.params=
+comment6.target=java.lang.String\ toString()
+comment6.text=\r\n\tYou\ may\ find\ it\ useful\ to\ override\ the\ toString\ method\ to\ help\ with\ debugging...\r\n
+numComments=7
