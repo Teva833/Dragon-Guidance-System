@@ -20,6 +20,22 @@ public class Solver
         // initialise instance variables
         traversed = new ArrayList<>();
     }
+    
+    public String findNode(String room, List<TNode<String>> rooms)
+    {
+        for(int i = 0; i < rooms.size(); i++)
+        {
+            List<TNode<String>> children = rooms.get(i).getChildren();
+            for(int j = 0; j < children.size(); i++)
+            {
+                if(room.equals(children.get(i).getData()))
+                {
+                    return children.get(i).getParent().getData();
+                }
+            }
+        }
+        return null;
+    }
 
     
 

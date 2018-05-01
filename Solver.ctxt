@@ -2,6 +2,8 @@
 comment0.params=
 comment0.target=Solver()
 comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Solver\r\n
-comment1.params=start\ end\ graph
-comment1.target=java.util.List\ pathFind(java.lang.String,\ java.lang.String,\ Graph)
-numComments=2
+comment1.params=room\ rooms
+comment1.target=java.lang.String\ findNode(java.lang.String,\ java.util.List)
+comment2.params=start\ end\ graph
+comment2.target=java.util.List\ pathFind(java.lang.String,\ java.lang.String,\ Graph)
+numComments=3
