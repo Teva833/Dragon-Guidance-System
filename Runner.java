@@ -1,4 +1,4 @@
-
+import java.util.Scanner;
 import java.util.List;
 public class Runner
 {
@@ -11,9 +11,24 @@ public class Runner
     }
     public static void main(String[] args)
     {
+        
+        
         Maze m = new Maze();
         Solver s = new Solver();
-        List<String> path = s.pathFind("0","6", m.getMap());
+        Scanner sc = new Scanner(System.in);
+
+
+        System.out.println("What room are you near?");
+        String from = sc.next();
+        System.out.println("What you do you want to go to?");
+        String to = sc.next();
+        Tree t = new Tree();
+        
+        String fromNode = s.findNode(from, t.getHalls());
+        String toNode = s.findNode(to, t.getHalls());
+        
+        
+        List<String> path = s.pathFind(fromNode,toNode, m.getMap());
         for(int i = 0; i<path.size(); i++)
         {
             System.out.println(path.get(i));
