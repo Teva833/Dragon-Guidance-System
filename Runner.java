@@ -12,20 +12,35 @@ public class Runner
     public static void main(String[] args)
     {
         
-        
+        boolean done = false;
         Maze m = new Maze();
         Solver s = new Solver();
         Scanner sc = new Scanner(System.in);
+        String fromNode = null;
+        String toNode = null;
 
+       while(!done)
+       {
+            System.out.println("What room are you near?");
+            String from = sc.next();
+            System.out.println("What room do you want to go to?");
+            String to = sc.next();
+            Tree t = new Tree();
 
-        System.out.println("What room are you near?");
-        String from = sc.next();
-        System.out.println("What you do you want to go to?");
-        String to = sc.next();
-        Tree t = new Tree();
-        sc.close();
-        String fromNode = s.findNode(from, t.getHalls());
-        String toNode = s.findNode(to, t.getHalls());
+            fromNode = s.findNode(from, t.getHalls());
+            toNode = s.findNode(to, t.getHalls());
+            if(fromNode != null && toNode != null)
+            {
+                done = true;
+            }
+            else
+            {
+                System.out.println("Sorry, the room you entered does not exist.");
+                System.out.println("Please try again.");
+                System.out.println("");
+            }
+       }
+       sc.close();
         
         
         List<String> path = s.pathFind(fromNode,toNode, m.getMap());
