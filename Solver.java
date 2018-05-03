@@ -36,6 +36,21 @@ public class Solver
         }
         return null;
     }
+    
+    
+    //start to getting a path a lowest length, but not sure how to get the options list
+    public List<String> choosePath(List<ComparablePath> options)
+    {
+        ComparablePath bestPath = options.get(0);
+        for(int i = 1; i < options.size(); i++)
+        {
+            if(bestPath.getCount() > options.get(i).getCount())
+            {
+                bestPath = options.get(i);
+            }
+        }
+        return bestPath.getPath();
+    }
 
     
 
