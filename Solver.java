@@ -26,11 +26,11 @@ public class Solver
         for(int i = 0; i < rooms.size(); i++)
         {
             List<TNode<String>> children = rooms.get(i).getChildren();
-            for(int j = 0; j < children.size(); i++)
+            for(int j = 0; j < children.size(); j++)
             {
-                if(room.equals(children.get(i).getData()))
+                if(room.equals(children.get(j).getData()))
                 {
-                    return children.get(i).getParent().getData();
+                    return children.get(j).getParent().getData();
                 }
             }
         }

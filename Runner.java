@@ -23,13 +23,14 @@ public class Runner
         System.out.println("What you do you want to go to?");
         String to = sc.next();
         Tree t = new Tree();
-        
+        sc.close();
         String fromNode = s.findNode(from, t.getHalls());
         String toNode = s.findNode(to, t.getHalls());
         
         
         List<String> path = s.pathFind(fromNode,toNode, m.getMap());
-        for(int i = 0; i<path.size(); i++)
+        System.out.println("Here is your path.");
+        for(int i = 0; i < path.size(); i++)
         {
             System.out.println(path.get(i));
         }
