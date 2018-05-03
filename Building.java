@@ -33,12 +33,12 @@ public class Building extends Stage
         addActor(new Node("6001H2"), 620, 235); //606 607
         addActor(new Node("6001H3"), 620, 290); //611 612
         addActor(new Node("6001H4"), 620, 322); //1f T Hall
-        addActor(new Node("6001SE"), 550, 322); //1f to 300 mid stairs
+        addActor(new Node("6001S1"), 550, 322); //1f to 300 mid stairs
         addActor(new Node("6001H5"), 620, 385); //613 615 616
         addActor(new Node("6001H6"), 620, 450); //1f Rest rooms confrence
         addActor(new Node("6001H7"), 620, 491); //1f bot hall T
         addActor(new Node("6001E2"), 680, 491); //1f bot exit right
         addActor(new Node("6001E3"), 570, 491); //1f bot to band hall
-        addActor(new Node("6001S1"), 620, 522); //1f bot stairs
+        addActor(new Node("6001S2"), 620, 522); //1f bot stairs
     }
 }
