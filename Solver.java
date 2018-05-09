@@ -11,7 +11,7 @@ public class Solver
 {
     // instance variables - replace the example below with your own
     List<String> traversed;
-
+    MyQueue<String> path; 
     /**
      * Constructor for objects of class Solver
      */
@@ -19,6 +19,7 @@ public class Solver
     {
         // initialise instance variables
         traversed = new ArrayList<>();
+        path = new MyQueue<String>();
     }
     
     public String findNode(String room, List<TNode<String>> rooms)
@@ -51,7 +52,7 @@ public class Solver
         }
         return bestPath.getPath();
     }
-
+    
     
 
     public List<String> pathFind(String start, String end, Graph<String> graph)
