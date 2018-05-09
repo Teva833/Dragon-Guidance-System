@@ -73,9 +73,9 @@ public class Tree
         firstHall2.addChild(six07);
         firstHall3.addChild(six11);
         firstHall3.addChild(six12);
-        firstHall0.addChild(six13);
-        firstHall0.addChild(six15);
-        firstHall0.addChild(six16);
+        firstHall5.addChild(six13);
+        firstHall5.addChild(six15);
+        firstHall5.addChild(six16);
         //second Floor Adds
         secondHall0.addChild(six21);
         secondHall0.addChild(six22);
@@ -91,6 +91,32 @@ public class Tree
         secondHall4.addChild(six32);
         secondHall4.addChild(six32);
         secondHall4.addChild(six33);
+        
+        halls.add(firstStair0);
+        halls.add(firstHall0);
+        halls.add(firstExit0);
+        halls.add(firstExit1);
+        halls.add(firstHall1);
+        halls.add(firstHall2);
+        halls.add(firstHall3);
+        halls.add(firstHall4);
+        halls.add(firstStair1);
+        halls.add(firstHall5);
+        halls.add(firstHall6);
+        halls.add(firstHall7);
+        halls.add(firstExit2);
+        halls.add(firstExit3);
+        halls.add(firstStair2);
+        halls.add(secondStair0);
+        halls.add(secondHall0);
+        halls.add(secondHall1);
+        halls.add(secondHall2);
+        halls.add(secondHall3);
+        halls.add(secondStair1);
+        halls.add(secondHall4);
+        halls.add(secondHall5);
+        halls.add(secondStair2);
+        
     }
 
     public List<TNode<String>> getHalls()
