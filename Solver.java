@@ -53,6 +53,10 @@ public class Solver
         return bestPath.getPath();
     }
     
+    public List<ComparablePath> findPaths(String start, String end, Graph<String> graph)
+    {
+        
+    }
     
 
     public List<String> pathFind(String start, String end, Graph<String> graph)
