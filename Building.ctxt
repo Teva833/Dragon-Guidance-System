@@ -5,4 +5,6 @@ comment1.params=
 comment1.target=Building()
 comment2.params=
 comment2.target=mayflower.Actor[]\ getNodes()
-numComments=3
+comment3.params=path
+comment3.target=void\ matchPath(java.util.List)
+numComments=4

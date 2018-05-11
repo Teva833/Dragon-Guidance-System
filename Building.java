@@ -10,8 +10,9 @@ public class Building extends Stage
 {
     public void update()
     {
-        
+
     }
+
     public Building()
     {
         setBackground("600Map.png");
@@ -42,8 +43,21 @@ public class Building extends Stage
         addActor(new Node("6001E3"), 570, 491); //1f bot to band hall
         addActor(new Node("6001S2"), 620, 522); //1f bot stairs
     }
+
     public Actor[] getNodes()
     {
         return getActors();
+    }
+
+    public void matchPath(List<String> path)
+    {
+        Actor[] nodes = getActors();
+        for(int i = 0; i < path.size(); i++)
+            for(int j = 0; j < nodes.length; j++)
+            {
+                Node n = (Node) nodes[j];
+                if(n.getVal() == path.get(i))
+                    n.changeState();
+                }
     }
 }

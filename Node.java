@@ -23,6 +23,10 @@ public class Node extends Actor
        val = "";
        visible = false;
    }
+   public String getVal()
+   {
+       return val;
+   }
    public void changeState()
    {
        visible = !visible;
