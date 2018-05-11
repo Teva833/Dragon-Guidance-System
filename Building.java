@@ -5,6 +5,7 @@ import mayflower.*;
  * @author (your name) 
  * @version (a version number or a date)
  */
+import java.util.List;
 public class Building extends Stage
 {
     public void update()
@@ -40,5 +41,9 @@ public class Building extends Stage
         addActor(new Node("6001E2"), 680, 491); //1f bot exit right
         addActor(new Node("6001E3"), 570, 491); //1f bot to band hall
         addActor(new Node("6001S2"), 620, 522); //1f bot stairs
+    }
+    public Actor[] getNodes()
+    {
+        return getActors();
     }
 }
