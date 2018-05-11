@@ -56,13 +56,14 @@ public class Runner
                     
                     
                     b.matchPath(path);
+                    checker:
                     while(true)
                     {
                         System.out.println("Are you ready for the next path? (Y for yes)");
                         String question = sc.next();
                         if(question.equals("Y"))
                         {
-                            break;
+                            break checker;
                         }
                         
                     }
