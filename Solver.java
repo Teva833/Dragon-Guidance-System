@@ -7,7 +7,7 @@ import java.util.List;
  * @author (your name)
  * @version (a version number or a date)
  */
-public class Solver
+public class Solver implements SolveCapability
 {
     // instance variables - replace the example below with your own
     List<String> traversed;
@@ -53,9 +53,11 @@ public class Solver
         return bestPath.getPath();
     }
     
+    
+    //not implemented yet
     public List<ComparablePath> findPaths(String start, String end, Graph<String> graph)
     {
-        
+        return null;
     }
     
 
