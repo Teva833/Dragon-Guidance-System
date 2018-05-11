@@ -29,6 +29,6 @@ public class Node extends Actor
    }
    public void changeState()
    {
-       visible = !visible;
+       visible = true;
    }
 }
