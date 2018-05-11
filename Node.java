@@ -3,22 +3,28 @@ import mayflower.*;
 public class Node extends Actor
 {
    private String val;
+   private boolean visible;
    public void update()
    {
-        
+        if(visible)
+        {
+            Picture node = new Picture("node.png");
+            node.resize(10,10);
+            setPicture(node);
+        }
    }
    public Node(String n)
    {
        val = n;
-       Picture node = new Picture("node.png");
-       node.resize(10,10);
-       setPicture(node);
+       visible = false;
    }
    public Node()
    {
        val = "";
-       Picture node = new Picture("node.png");
-       node.resize(10,10);
-       setPicture(node);
+       visible = false;
+   }
+   public void changeState()
+   {
+       visible = !visible;
    }
 }

@@ -5,4 +5,6 @@ comment1.params=n
 comment1.target=Node(java.lang.String)
 comment2.params=
 comment2.target=Node()
-numComments=3
+comment3.params=
+comment3.target=void\ changeState()
+numComments=4
