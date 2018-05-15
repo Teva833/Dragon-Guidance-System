@@ -95,10 +95,12 @@ public class Solver implements SolveCapability
                 {
                     path.add(check.get(j));
                 }
+                traversed = new ArrayList<>();
                 return path;
             }
         }
         //path.add(end);
+        traversed = new ArrayList<>();
         return null;
     }
 

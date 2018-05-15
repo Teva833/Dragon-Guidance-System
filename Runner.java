@@ -39,6 +39,7 @@ public class Runner
             {
                 File file = new File(filename);
                 Scanner in = new Scanner(file);
+                top:
                 while(in.hasNextLine())
                 {
                     b = new Building();
@@ -61,9 +62,13 @@ public class Runner
                     {
                         System.out.println("Are you ready for the next path? (Y for yes)");
                         String question = sc.next();
-                        if(question.equals("Y"))
+                        if(in.hasNextLine() && question.equals("Y"))
                         {
                             break checker;
+                        }
+                        else if(!in.hasNextLine() && question.equals("Y"))
+                        {
+                            break top;
                         }
                         
                     }
