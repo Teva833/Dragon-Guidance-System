@@ -66,7 +66,7 @@ public class Tree
         //first Floor Adds
         firstHall0.addChild(six01);
         firstHall0.addChild(six02);
-        firstExit1.addChild(six03);
+        firstExit0.addChild(six03);
         firstHall1.addChild(six04);
         firstHall1.addChild(six05);
         firstHall2.addChild(six06);
@@ -90,7 +90,7 @@ public class Tree
         secondHall4.addChild(six31);
         secondHall4.addChild(six32);
         secondHall4.addChild(six32);
-        secondHall4.addChild(six33);
+        secondHall5.addChild(six33);
         
         halls.add(firstStair0);
         halls.add(firstHall0);
