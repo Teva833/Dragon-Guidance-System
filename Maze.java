@@ -44,11 +44,11 @@ public class Maze
         //first floor edges
         map.addEdge("6001S0","6001H0");
         map.addEdge("6001H0","6001S0");
-        //map.addEdge("6001H0","6001E0");
-        //map.addEdge("6001E0","6001H0");
+        map.addEdge("6001H0","6001H1");
+        map.addEdge("6001H0","6001E0");
+        map.addEdge("6001E0","6001H0");
         map.addEdge("6001H0","6001E1");
         map.addEdge("6001E1","6001H0");
-        map.addEdge("6001H0","6001H1");
         map.addEdge("6001H1","6001H0");
         map.addEdge("6001H1","6001H2");
         map.addEdge("6001H2","6001H1");
