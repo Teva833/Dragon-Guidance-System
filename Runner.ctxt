@@ -3,4 +3,6 @@ comment0.params=
 comment0.target=Runner()
 comment1.params=args
 comment1.target=void\ main(java.lang.String[])
-numComments=2
+comment2.params=fileName\ s\ append
+comment2.target=void\ writeToFile(java.lang.String,\ java.lang.String,\ boolean)
+numComments=3
