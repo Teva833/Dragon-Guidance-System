@@ -72,6 +72,7 @@ public class Solver implements SolveCapability
 
         }
         List<String> neighbors = graph.getNeighbors(start);
+        
         for(int i = 0; i < neighbors.size(); i++)
         {
             boolean passed = false;

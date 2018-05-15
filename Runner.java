@@ -72,6 +72,11 @@ public class Runner
                         }
                         
                     }
+                     fromNode = null;//null everything before running again?
+                     toNode = null;
+
+                     to = null;
+                     from = null;
                 }
             }
             catch(Exception e)
