@@ -58,6 +58,6 @@ public class Building extends Stage
                 Node n = (Node) nodes[j];
                 if(n.getVal() == path.get(i))
                     n.changeState();
-                }
+            }
     }
 }

@@ -32,6 +32,8 @@ public class Runner
             {
                 System.out.println("Please enter the file name without the .txt");
                 filename = sc.next() + ".txt";
+                System.out.println("Where would you like to save your directions?");
+                String writeFile = sc.next()+".txt";
                 try
                 {
                     File file = new File(filename);
@@ -52,7 +54,7 @@ public class Runner
                         System.out.println("Here is your path.");
                         for(int i = 0; i < path.size(); i++)
                         {
-                            writeToFile("output.txt", path.get(i)+ " ", true);
+                            writeToFile(writeFile, path.get(i)+ " ", true);
                         }
     
                         b.matchPath(path);
@@ -133,14 +135,20 @@ public class Runner
                         System.out.println("");
                     }
                 }
-                sc.close();
+                
     
                 List<String> path = s.pathFind(fromNode,toNode, m.getMap());
                 System.out.println("Here is your path.");
+                b.matchPath(path);
+                System.out.println("Where would you like to save your directions?");
+                String writeFile = sc.next()+".txt";
+                sc.close();
                 for(int i = 0; i < path.size(); i++)
                 {
-                    writeToFile("output.txt", path.get(i)+ " ", true);
+                    writeToFile(writeFile, path.get(i)+ " ", true);
                 }
+                
+                
             }
             System.out.println("Thank you for using Dragon Guidance System.");
             
