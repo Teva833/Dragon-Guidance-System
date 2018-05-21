@@ -112,7 +112,7 @@ public class Runner
             e.printStackTrace();
             }
              */
-    
+    /*
             else
             {
                 while(!done)
@@ -149,6 +149,10 @@ public class Runner
                 }
                 
                 
+            }*/
+            else
+            {
+                System.out.println("Please come back with a schedule file.");
             }
             System.out.println("Thank you for using Dragon Guidance System.");
             
